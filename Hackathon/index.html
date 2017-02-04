@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <meta charset=utf-8 />
+    <title>Demo by Roko C.B.</title>
+    <script>
+        var imagesArray = ["0001MH0000002000C0_DXXX.jpg", "0001MR0000001000I1_DXXX.jpg", "0001MR0000001000I1_DXXX.jpg", "1N216958451EFF76ZFP1950L0M1-BR.JPG", "1N216958451EFF76ZFP1950R0M1-BR.JPG", "1N483290340EFFCMUFP0795R0M1-BR.JPG", "1P216957338ESF76ZFP2600L8M1-BR.JPG", "1P394509391EFFBRQ2P2143L4M1-BR.JPG", "1P394509413EFFBRQ2P2143L5M1-BR.JPG", "1P394509425EFFBRQ2P2143L6M1-BR.JPG", "1P394509452EFFBRQ2P2143L4M1-BR.JPG", "1P394509473EFFBRQ2P2143L5M1-BR.JPG", "1P394509485EFFBRQ2P2143L6M1-BR.JPG", "1P483285123EFFCMT8P2400L2M1-BR.JPG", "1P483285156EFFCMT8P2400L5M1-BR.JPG", "1P483285186EFFCMT8P2400L7M1-BR.JPG", "1P483285215EFFCMT8P2400R2M1-BR.JPG", "1P483285272EFFCMT8P2400L5M1-BR.JPG", "1P483285301EFFCMT8P2400L7M1-BR.JPG", "1P483285330EFFCMT8P2400R2M1-BR.JPG", "1P483288804EFFCMUFP2537L3M1-BR.JPG", "1P483288836EFFCMUFP2537L4M1-BR.JPG", "1P483288883EFFCMUFP2537L6M1-BR.JPG", "1P483288959EFFCMUFP2537R1M1-BR.JPG", "1P483289035EFFCMUFP2537R3M1-BR.JPG", "1P483289080EFFCMUFP2537R4M1-BR.JPG", "1P483289114EFFCMUFP2537R5M1-BR.JPG", "1P483289159EFFCMUFP2537R6M1-BR.JPG", "1P483289195EFFCMUFP2537R7M1-BR.JPG", "2F126468064EDN0000P1001L0M1-BR.JPG"];
+
+        function displayImage() {
+            var num = Math.floor(Math.random() * 7); // 0...6
+            document.canvas.src = imagesArray[num];
+        }
+    </script>
+</head>
+<body>
+
+
+    <form name="imageForm">
+        <table border=3>
+            <tr>
+                <td>
+                    <input onclick="displayImage();" type=button value="Display Random Image">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="blank.jpg" name="canvas" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
