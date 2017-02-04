@@ -12,3 +12,8 @@ function date(month, day, year) {
 function key() {
     url += ("&api_key=" + apiKey);
 }
+
+function url() {
+    return url;
+}
+
