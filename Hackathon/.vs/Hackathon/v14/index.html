@@ -1,6 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        p.test1 {
+            color: white;
+        }
+
+        body {
+            background-image: url("http://media-channel.nationalgeographic.com/media/uploads/photos/content/video/2016/10/04/778945603828_Mars_BigThinker_Mars101.mov.00_01_00_21.Still001.jpg");
+        }
+    </style>
     <title>Mars Surface Viewer</title>
     <h1> <center>Mars Surface Viewer</center> </h1>
     <meta charset="utf-8">
@@ -9,24 +18,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body text="white">
     <section>
         <div class="row">
             <div class="col-md-4"> <center>Curiosity</center> </div>
-            <div class="col-md-4"> <center>Oppertunity</center></div>
+            <div class="col-md-4"> <center>Opportunity</center></div>
             <div class="col-md-4"> <center>Spirit</center> </div>
+
+            <div class="col-md-4">
+                <center>
+                    <img src="http://www.purerover.com/wp-content/uploads/2016/11/range-rover-curiosity-mars-rover-curiosity-render-hiresb.jpg" alt="Curiosity Rover" style="width:200px;height:128px;">
+                </center>
+            </div>
+
+            <div class="col-md-4">
+                <center>
+                    <img src="http://www.spaceflightinsider.com/wp-content/uploads/2014/02/Rover.jpg" alt="opportunity" style="width:200px;height:128px;">
+                </center>
+            </div>
+
+            <div class="col-md-4">
+                <center>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/NASA_Mars_Rover.jpg" alt="Spirit Rover" style="width:200px;height:128px;">
+                </center>
+            </div>
         </div>
 
         <form action="Choose Rover"
-            <p>Please select a Rover:</p>
+            <p class="test1">Please select a Rover:</p>
             <input type="radio" name="rover" value="Curiosity"> Curiosity<br>
-            <input type="radio" name="rover" value="Oppertunity"> Oppertunity<br>
+            <input type="radio" name="rover" value="Opportunity"> Opportunity<br>
             <input type="radio" name="rover" value="Spirit"> Spirit
         </form>
     </section>
 
     <section>
-        <p>Please select a camera angle:<br></p>
+        <p class="test1">Please select a camera angle:<br></p>
     </section>
 
     <section>
@@ -133,7 +160,12 @@
 
         </select>
         <br><br><br>
-        <p>Sol Date Explanation:</p>
+        <p class="test1">Sol Date Explanation:</p>
+        <p class="test1">
+            The term sol (pronounced s’ah’l) is used by planetary astronomers to refer to the duration of a solar day on Mars. A mean Martian solar day, or "sol", is 24 hours, 39 minutes, and 35.244 seconds.<br><br>
+            When a spacecraft Lander begins operations on Mars, the passing Martian days (sols) use a simple numerical count to track time. The two Viking missions, Mars Phoenix and the Mars Science Laboratory rover Curiosity count the sol on which each Lander touched down as "Sol 0"; Mars Pathfinder and the two Mars Exploration Rovers instead defined touchdown as "Sol 1".<br><br>
+            Although Lander missions have twice occurred in pairs sol counts of the two Landers were not synchronized. For example, although Spirit and Opportunity launched to operate simultaneously on Mars, each counted its landing date as "Sol 1", putting their calendars approximately 21 sols out of synchronization. Spirit and Opportunity differ in longitude by 179 degrees, so when it is daylight for one it is night for the other, and they carried out activities independently while both were operational.
+        </p>
     </section>
 
 </body>
@@ -141,7 +173,7 @@
 <footer>
     <center>
         Brought to you by Cybermen AKA Team Unknown <br>
-        Auburn Hakathon 2017
+        Auburn Hackathon 2017
     </center>
 </footer>
 </html>
