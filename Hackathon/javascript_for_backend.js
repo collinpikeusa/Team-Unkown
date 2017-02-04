@@ -16,4 +16,3 @@ function key() {
 function url() {
     return url;
 }
-
