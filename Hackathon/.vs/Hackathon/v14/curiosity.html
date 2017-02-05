@@ -7,8 +7,25 @@
             background-image: url("http://media-channel.nationalgeographic.com/media/uploads/photos/content/video/2016/10/04/778945603828_Mars_BigThinker_Mars101.mov.00_01_00_21.Still001.jpg");
         }
 	</style>
-	<h1 style="color:White"> <center>Curiosity Rover</center></h1>
+		
+	<script>
+        var imagesArray = ["0001MH0000002000C0_DXXX.jpg", "0001MR0000001000I1_DXXX.jpg", "0001MR0000001000I1_DXXX.jpg", "1N216958451EFF76ZFP1950L0M1-BR.JPG", "1N216958451EFF76ZFP1950R0M1-BR.JPG", "1N483290340EFFCMUFP0795R0M1-BR.JPG", "1P216957338ESF76ZFP2600L8M1-BR.JPG", "1P394509391EFFBRQ2P2143L4M1-BR.JPG", "1P394509413EFFBRQ2P2143L5M1-BR.JPG", "1P394509425EFFBRQ2P2143L6M1-BR.JPG", "1P394509452EFFBRQ2P2143L4M1-BR.JPG", "1P394509473EFFBRQ2P2143L5M1-BR.JPG", "1P394509485EFFBRQ2P2143L6M1-BR.JPG", "1P483285123EFFCMT8P2400L2M1-BR.JPG", "1P483285156EFFCMT8P2400L5M1-BR.JPG", "1P483285186EFFCMT8P2400L7M1-BR.JPG", "1P483285215EFFCMT8P2400R2M1-BR.JPG", "1P483285272EFFCMT8P2400L5M1-BR.JPG", "1P483285301EFFCMT8P2400L7M1-BR.JPG", "1P483285330EFFCMT8P2400R2M1-BR.JPG", "1P483288804EFFCMUFP2537L3M1-BR.JPG", "1P483288836EFFCMUFP2537L4M1-BR.JPG", "1P483288883EFFCMUFP2537L6M1-BR.JPG", "1P483288959EFFCMUFP2537R1M1-BR.JPG", "1P483289035EFFCMUFP2537R3M1-BR.JPG", "1P483289080EFFCMUFP2537R4M1-BR.JPG", "1P483289114EFFCMUFP2537R5M1-BR.JPG", "1P483289159EFFCMUFP2537R6M1-BR.JPG", "1P483289195EFFCMUFP2537R7M1-BR.JPG", "2F126468064EDN0000P1001L0M1-BR.JPG", "2F126468064EDN0000P1001R0M1-BR.JPG", "2N126467960EDN0000P1500L0M1-BR.JPG", "2N126467960EDN0000P1500R0M1-BR.JPG", "2N126468200EDN0000P1502L0M1-BR.JPG", "2N126468200EDN0000P1502R0M1-BR.JPG", "2N126468253EDN0000P1502L0M1-BR.JPG", "2N126468253EDN0000P1502R0M1-BR.JPG", "2N126468305EDN0000P1502L0M1-BR.JPG", "2N126468305EDN0000P1502R0M1-BR.JPG", "2N126468357EDN0000P1502L0M1-BR.JPG", "2N126468357EDN0000P1502R0M1-BR.JPG", "2N126468424EDN0000P1502L0M1-BR.JPG", "2N126468579EDN0000P1502L0M1-BR.JPG", "2N126468852EDN0000P1503L0M1-BR.JPG", "2N126468852EDN0000P1503R0M1-BR.JPG", "2N126468889EDN0000P1503L0M1-BR.JPG", "2N126468889EDN0000P1503R0M1-BR.JPG", "2N126468921EDN0000P1503L0M1-BR.JPG", "2N126468972EDN0000P1503L0M1-BR.JPG", "2N126469021EDN0000P1503R0M1-BR.JPG", "2N126469170EDN0000P1503L0M1-BR.JPG", "2N126469500EDN0000P1501R0M1-BR.JPG", "2N126469670EDN0000P1501R0M1-BR.JPG", "2N126469721EDN0000P1501L0M1-BR.JPG", "2P126471364EDN0000P2303L6M1-BR.JPG", "2P126471425EDN0000P2303L5M1-BR.JPG", "2P126471450EDN0000P2303L6M1-BR.JPG", "2P126471510EDN0000P2303L5M1-BR.JPG", "2P126471535EDN0000P2303L6M1-BR.JPG", "2R126468012EDN0000P1002L0M1-BR.JPG", "2R126468012EDN0000P1002R0M1-BR.JPG", "CR0_397506434EDR_F0010008CCAM00000M_.JPG", "FLB_486265257EDR_F0481570FHAZ00323M_.JPG", "NLA_397586928EDR_F0010008AUT_04096M_.JPG", "NLA_397586934EDR_F0010008AUT_04096M_.JPG", "NRA_397586928EDR_F0010008AUT_04096M_.JPG"];
+
+        function displayImage() {
+            var num = Math.floor(Math.random() * 65); // 0...64
+            document.canvas.src = imagesArray[num];
+        }
+    </script>
+	
+	<h1 style="color:White"> <center> <font size="8">Curiosity Rover</font> </center></h1>
 </head>
+
+<body>
+	<div class="col-md-4">
+                <center>
+                    <img src="http://www.purerover.com/wp-content/uploads/2016/11/range-rover-curiosity-mars-rover-curiosity-render-hiresb.jpg" alt="Curiosity Rover" style="width:500px;height:300px;">
+                </center>
+            </div>
     <p class="test1">Please select a camera angle: 
 	    <select name="Camera">
             <option>Select</option>
@@ -22,6 +39,8 @@
     </select>    
 	
 <br><br><br>
+Please select an Earth Date:
+<br>
         <select name="Month">
             <option>Month</option>
             <option value="January">January</option>
@@ -75,6 +94,30 @@
 
         <select name="Year">
             <option>Year</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+			<option value="2015">2015</option>
+			<option value="2014">2014</option>
+			<option value="2013">2013</option>
+			<option value="2012">2012</option>
+			<option value="2011">2011</option>
+			<option value="2010">2009</option>
+			<option value="2009">2008</option>
+			<option value="2008">2007</option>
+			<option value="2007">2006</option>
+			<option value="2006">2005</option>
+			<option value="2005">2004</option>
+			<option value="2004">2003</option>
+			<option value="2003">2002</option>
+			<option value="2002">2001</option>
+			<option value="2001">2000</option>
+			<option value="2000">1999</option>
+			<option value="1999">1998</option>
+			<option value="1998">1998</option>
+			<option value="1997">1997</option>
+			<option value="1996">1996</option>
+			<option value="1995">1995</option>
+			<option value="1994">1994</option>
             <option value="1993">1993</option>
             <option value="1992">1992</option>
             <option value="1991">1991</option>
@@ -122,6 +165,26 @@
             <option value="1949">1949</option>
             <option value="1948">1948</option>
             <option value="1947">1947</option>
+		</select>
+<br><br>
+<p.test1>Or enter a Sol Date:</p>
+        <form>
+        <input type="number" name="Sol Date" min="1" max="1598">
+        <form name="imageForm">
+        <table border=3>
+            <tr>
+                <td>
+                    <input onclick="displayImage();" type=button value="GO!!!!!!!!!"> <!-- You said to make it where they press go :) -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="blank.jpg" name="canvas" />
+                </td>
+            </tr>
+        </table>
+    </form>
+        </form>
 
         <br><br><br>		
 		<p class="test1"><font size="6">Sol Date Explanation:</font></p>
@@ -132,8 +195,10 @@
         </font></p>
 
 </body>
-
-<footer>
+<br><br><br><br>
+<center><input type="button" name="b1" value="Pick another Rover?" onclick="location.href='index.html'"></center>
+<br><br>
+<footer style="color:White">
     <center>
         Brought to you by Cybermen AKA Team Unknown <br>
         Auburn Hackathon 2017
